@@ -1,13 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { HashRouter } from "react-router-dom";   // ✅ ONLY this
-import App from './App';
-import './styles/global.css';
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { HashRouter } from "react-router-dom";
+import App from "./App";
+import "./styles/global.css";
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <HashRouter>
+    <HashRouter basename="/React_Project">
       <App />
     </HashRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
